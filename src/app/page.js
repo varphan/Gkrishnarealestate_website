@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation"; // Use next/navigation for Next.js 13
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
@@ -119,9 +119,6 @@ export default function Home() {
 
   const sectionRefs = {};
 
-  imageEnhancementServices.forEach(service => {
-    sectionRefs[service.title] = useRef(null);
-  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
