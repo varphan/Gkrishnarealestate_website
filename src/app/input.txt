@@ -1,0 +1,100 @@
+const imageEnhancementServices = [
+  {
+    title: "White Balancing",
+    description:
+      "Balancing allows objects that are white in person to be rendered white in the photo so the property can be shown in the best light. We also remove yellow or off-white discoloration to create a bright, crisp image.",
+    beforeImagePath: "/images/image-enhancer/white-balancing/before.jpg",
+    afterImagePath: "/images/image-enhancer/white-balancing/after.jpg",
+  },
+  {
+    title: "Image Sharpening",
+    description:
+      "An important process in ensuring your photos are top quality with a professional finish. By sharpening the image, it will emphasize texture and improve the overall quality of your photo.",
+    beforeImagePath: "/images/image-enhancer/image-sharpner/before.jpg",
+    afterImagePath: "/images/image-enhancer/image-sharpner/after.jpg",
+  },
+  {
+    title: "Vertical & Horizontal Straightening",
+    description:
+      "A great photo is all about composition. An image with a wonky horizon can make a photo look unprofessional, while incorrect vertical lines can make an image look distorted or as if the walls are leaning backwards. Correcting these issues will make for a photo that is pleasing to the eye.",
+    beforeImagePath: "/images/image-enhancer/vertical-and-horizontal/before.jpg",
+    afterImagePath: "/images/image-enhancer/vertical-and-horizontal/after.jpg",
+  },
+  {
+    title: "Lens Distortion Removal",
+    description:
+      "When shooting without professional equipment or the incorrect lens, distortion can occur as the lens tries to squeeze as much into the photo frame as possible. As a result, straight lines will be visibly curved. This can be rectified and will ensure the walls are straight.",
+    beforeImagePath: "/images/image-enhancer/lens-distortion-removal/before.jpg",
+    afterImagePath: "/images/image-enhancer/lens-distortion-removal/after.jpg",
+  },
+  {
+    title: "Brightness & Contrast Adjustment",
+    description:
+      "A bright photo with the correct contrast is great to look at and more likely to draw a potential buyer’s attention. Adjusting these elements will create depth, making the photo more engaging and inviting to the viewer.",
+    beforeImagePath: "/images/image-enhancer/contrast/before.jpg",
+    afterImagePath: "/images/image-enhancer/contrast/after.jpg",
+  },
+  {
+    title: "Sky Replacement",
+    description:
+      "Don’t let a gloomy day ruin your photos. Our professional editing team can replace a sky that is overcast, washed out or overexposed with a beautiful clear, blue sky.",
+    beforeImagePath: "/images/image-enhancer/sky-replace/before.jpg",
+    afterImagePath: "/images/image-enhancer/sky-replace/after.jpg",
+  },
+  {
+    title: "Lawn Enhancement, Repair or Replace",
+    description:
+      "A perfect lawn is important when selling a home because it adds to the curb appeal. Repairing a lawn that may be a little brown from a lack of rain or replacing sections can show potential buyers just how great the lawn can be.",
+    beforeImagePath: "/images/image-enhancer/lawn-enhancement/before.jpg",
+    afterImagePath: "/images/image-enhancer/lawn-enhancement/after.jpg",
+  },
+  {
+    title: "Tone Adjustment",
+    description:
+      "Tone adjustment is a great tool to add a dramatic effect to an image or a light mood, depending on the type of photo. When it comes to selling property, the correct tone will help an image appear bright and welcoming.",
+    beforeImagePath: "/images/image-enhancer/tone-adjustment/before.jpg",
+    afterImagePath: "/images/image-enhancer/tone-adjustment/after.jpg",
+  },
+  {
+    title: "TV Screen Replacement",
+    description:
+      "While TVs have made great advances in their look, a black box is unappealing in a beautiful lounge room, so replacing the blank screen with a beautiful image can really enhance the photo and the mood of the room. It is also a great way to hide any unwanted reflections that may be on the screen, such as a flash or people in the room.",
+    beforeImagePath: "/images/image-enhancer/tv-screen-replacement/before.jpg",
+    afterImagePath: "/images/image-enhancer/tv-screen-replacement/after.jpg",
+  },
+  {
+    title: "Dust Spot Removal",
+    description:
+      "Dust can be hard to spot on a lens, especially the small lens of a smartphone. These spots that blur your photo or leave a mark can be removed to help create that perfect photo.",
+    beforeImagePath: "/images/image-enhancer/dust-spot-removal/before.jpg",
+    afterImagePath: "/images/image-enhancer/dust-spot-removal/after.jpg",
+  },
+  {
+    title: "Flash Reflection Removal",
+    description:
+      "Sometimes the use of a flash is required to light up a dark room, but as a result can leave dramatic reflections and shadows in the image. This can be corrected to create a drastically more professional looking photo.",
+    beforeImagePath: "/images/image-enhancer/flash-reflection/before.jpg",
+    afterImagePath: "/images/image-enhancer/flash-reflection/after.jpg",
+  },
+  {
+    title: "Add Fire to Fireplaces",
+    description:
+      "Show just how cozy and inviting a room can be by adding a warming fire in the fireplace. Adding a fire will grab the viewer’s attention and is likely to evoke feelings of comfort.",
+    beforeImagePath: "/images/image-enhancer/fire-replace/before.jpg",
+    afterImagePath: "/images/image-enhancer/fire-replace/after.jpg",
+  },
+  {
+    title: "HDR Bracketing with Indoor Window Replacement",
+    description:
+      "If you shoot bracketed shots, we can edit your images. Bracketing allows bright exteriors and dark interiors to appear as your eye sees them.",
+    beforeImagePath: "/images/image-enhancer/hdr-bracketing/before.jpg",
+    afterImagePath: "/images/image-enhancer/hdr-bracketing/after.jpg",
+  },
+  {
+    title: "Remove Photographer’s Reflection",
+    description:
+      "Nobody wants to know what the photographer looks like or what camera you are using. We remove photographer & camera reflections for a streamlined shot.",
+    beforeImagePath: "/images/image-enhancer/camara-remove/before.jpg",
+    afterImagePath: "/images/image-enhancer/camara-remove/after.jpg",
+  },
+];

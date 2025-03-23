@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overscroll-behavior: none;
+}
+
+/* Fullscreen container for loading animation with logo as background */
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack the logo and loading line vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* Black background */
+    z-index: 50;
+    animation: zoomInBackground 3s ease-in-out forwards;
+}
+
+/* Circular logo container */
+.logo-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 20%;
+    /* Circular container for logo */
+    /* Semi-transparent white circle */
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Space between logo and loading line */
+}
+
+/* Loading line style */
+.loading-line {
+    height: 2px;
+    background-color: #3498db;
+    /* Blue color for the loading line */
+    width: 0;
+    animation: loadingLineAnimation 2s ease-in-out forwards;
+}
+
+@keyframes zoomInBackground {
+    0% {
+        background-size: 150%;
+        /* Start with zoomed-in effect */
+        opacity: 1;
+    }
+
+    50% {
+        background-size: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        background-size: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes loadingLineAnimation {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 50%;
+        /* Adjust the width to your liking */
+        opacity: 0;
+    }
+}
