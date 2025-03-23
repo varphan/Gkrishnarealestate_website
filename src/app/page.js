@@ -117,10 +117,11 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [homeFadeIn, setHomeFadeIn] = useState(false);
 
-  const sectionRefs = imageEnhancementServices.reduce((acc, service) => {
-    acc[service.title] = useRef(null);
-    return acc;
-  }, {});
+  const sectionRefs = {};
+
+  imageEnhancementServices.forEach(service => {
+    sectionRefs[service.title] = useRef(null);
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
