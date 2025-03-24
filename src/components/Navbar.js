@@ -1,7 +1,19 @@
+"use client"; // Ensure it's a client component in Next.js App Router (if using app directory)
+
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+    const [currentPath, setCurrentPath] = useState("");
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setCurrentPath(window.location.pathname);
+        }
+    }, []);
+
     return (
         <nav className="bg-blue-600 text-white py-4 shadow-md">
             <div className="container mx-auto flex justify-between items-center px-6">
@@ -9,11 +21,11 @@ export default function Navbar() {
                 <div className="flex items-center space-x-4 ml-[-90px]"> {/* Adjusted margin-left here */}
                     <Link href="#home">
                         <Image
-                            src="/images/GVLOGO.png" // Replace with your logo path
+                            src="/images/GVLOGO.png"
                             alt="G Krishna Real Estate Edits Logo"
-                            width={120} // Adjust size as needed
-                            height={120} // Adjust size as needed
-                            className="object-contain rounded-full" // Rounded image
+                            width={120}
+                            height={120}
+                            className="object-contain rounded-full"
                         />
                     </Link>
                     <h1 className="text-2xl font-bold">G Krishna Real Estate Edits</h1>
@@ -22,17 +34,23 @@ export default function Navbar() {
                 {/* Navigation Links */}
                 <ul className="flex space-x-6">
                     <li>
-                        <a href="#home" className="hover:underline">Home</a>
+                        <Link href="/" className="hover:underline">Home</Link>
+                    </li>
+
+                    {/* Hide Image Enhancement when on /item-removal */}
+                    {currentPath !== "/item-removal" && (
+                        <li>
+                            <a href="#image-enhancement" className="hover:underline">Image Enhancement</a>
+                        </li>
+                    )}
+
+                    <li>
+                        <a href="#" className="hover:underline">Day to Dusk</a>
                     </li>
                     <li>
-                        <a href="#image-enhancement" className="hover:underline">Image Enhancement</a>
+                        <Link href="/item-removal" className="hover:underline">Item Removal</Link>
                     </li>
-                    <li>
-                        <a href="#" className="hover:underline">Day to Dusk</a> {/* Update this id if necessary */}
-                    </li>
-                    <li>
-                        <a href="#" className="hover:underline">Item Removal</a> {/* Update this id if necessary */}
-                    </li>
+
                     <li>
                         <a href="#about" className="hover:underline">About</a>
                     </li>

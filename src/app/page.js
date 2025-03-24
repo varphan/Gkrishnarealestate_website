@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useRef, useMemo, useState, useEffect } from "react";
+
 import { useRouter } from "next/navigation"; // Use next/navigation for Next.js 13
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
@@ -117,13 +118,20 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [homeFadeIn, setHomeFadeIn] = useState(false);
 
-  const sectionRefs = {};
+
+  const sectionRefs = useMemo(() => {
+    return imageEnhancementServices.reduce((acc, service) => {
+      acc[service.title] = React.createRef();
+      return acc;
+    }, {});
+  }, []);
 
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const timer1 = setTimeout(() => {
 
+
+    const timer1 = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
 
@@ -136,6 +144,7 @@ export default function Home() {
       clearTimeout(timer2);
     };
   }, []);
+
 
   const handleServiceClick = (serviceTitle) => {
     const section = sectionRefs[serviceTitle]?.current;

@@ -17,11 +17,6 @@ export default function LoadingScreen() {
 
     return (
         <>
-            <div className={`home-page ${isLoading ? 'blurred' : ''}`}>
-                {/* Your home page content goes here */}
-                <h1>Welcome to the Home Page</h1>
-                {/* Add more home page content here */}
-            </div>
 
             {isLoading && (
                 <div className={`fullscreen-container ${fadeOut ? 'fade-out' : ''}`}>

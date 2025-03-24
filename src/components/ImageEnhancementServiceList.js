@@ -21,7 +21,7 @@ const ServiceList = ({ title, onServiceClick }) => {
     const column3 = [
         "Remove Photographer’s Reflection",
         "Vertical & Horizontal Straightening",
-        "Lawn Enhancement – Repair or Replace",
+        "Lawn Enhancement, Repair or Replace",
         "HDR Bracketing with Indoor Window Replacement",
     ];
 
