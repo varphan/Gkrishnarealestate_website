@@ -87,7 +87,7 @@ const imageEnhancementServices = [
     title: "Flash Reflection Removal",
     description:
       "Sometimes the use of a flash is required to light up a dark room, but as a result can leave dramatic reflections and shadows in the image. This can be corrected to create a drastically more professional looking photo.",
-    beforeImagePath: "/images/image-enhancer/flash-reflection/before.jpg",
+    beforeImagePath: "/images/image-enhancer/flash-reflection/after.jpg",
     afterImagePath: "/images/image-enhancer/flash-reflection/after.jpg",
   },
   {
